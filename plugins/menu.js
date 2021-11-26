@@ -11,9 +11,7 @@ const defaultMenu = {
      ✪〔 %me 〕✪
 🔸Hai, %name!
 
-🔸 Github:https://github.com/SudoAnirudh
 
-🔸Instagram:https://www.instagram.com/__a_n_i_r_u_d_h_/
 
      〘 Eva 〙
 %readmore`.trimStart(),
@@ -351,7 +349,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch("https://telegra.ph/file/e32f2651bac64b6d62c81.jpg")).buffer(), text.trim(), 'Made With ❤️ by Anirudh', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch("https://telegra.ph/file/e32f2651bac64b6d62c81.jpg")).buffer(), text.trim(), 'bottoo', 'Owner Bot', ',owner', 'All Commands', '.? all', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, Try Again', m)
     throw e
